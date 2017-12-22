@@ -2,7 +2,7 @@
 
 [browserify]: https://github.com/substack/node-browserify
 [pug]: https://github.com/pugjs/pug
-[browserify-plain-jade]: https://github.comred/hotvengeance/browserify-plain-jade
+[browserify-plain-jade]: https://github.com/redhotvengeance/browserify-plain-jade
 
 [browserify] & [pug] - straight up.
 
