@@ -10,10 +10,10 @@
 ## Another, really?
 
 This began as a fork of the excellent browserify transform
-[browserify-plain-jade], which I fequently enjoyed using. The main goal
+[browserify-plain-jade], which I frequently enjoyed using. The main goal
 was to change the name to reflect that pug is now the official name.
 In the process, I also decided to shorten the name and to change the
-[package.json] dependency to always use the laest version of
+[package.json] dependency to always use the latest version of
 pug.
 
 ## How to install
