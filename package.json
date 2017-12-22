@@ -1,15 +1,16 @@
 {
-  "name": "browserify-plain-jade",
-  "description": "browserify transform to compile Jade templates to HTML, leaving the parser behind.",
-  "version": "0.2.2",
+  "name": "pugify-html",
+  "description": "browserify transform to compile pug templates to HTML strings, leaving the parser behind.",
+  "version": "0.1.0",
   "author": {
-    "name": "Ian Lollar",
-    "email": "rhv@redhotvengeance.com",
-    "url": "http://redhotvengeance.com"
+    "name": "John Shea",
+    "email": "coachshea@fastmail.com"
   },
   "keywords": [
     "browserify",
     "jade",
+    "pug",
+    "html",
     "templates",
     "plugin",
     "transform",
@@ -20,12 +21,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/redhotvengeance/browserify-plain-jade.git"
+    "url": "git://github.com/coachshea/pugify-html.git"
   },
-  "homepage": "https://github.com/redhotvengeance/browserify-plain-jade",
-  "main": "./lib/browserify-plain-jade",
+  "homepage": "https://github.com/coachshea/pugify-html",
+  "liscence": "MIT",
+  "main": "./lib/pugify-html.js",
   "dependencies": {
-    "jade": "^1.7.0",
+    "pug": "latest",
     "through": "^2.3.6"
   }
 }

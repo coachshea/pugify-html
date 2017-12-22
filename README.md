@@ -1,31 +1,38 @@
-# browserify-plain-jade
+# pugify-html
 
-[browserify](https://github.com/substack/node-browserify) & [Jade](https://github.com/visionmedia/jade) - straight up.
+[browserify]: https://github.com/substack/node-browserify
+[pug]: https://github.com/pugjs/pug
+[browserify-plain-jade]: https://github.comredhotvengeance/browserify-plain-jade
+
+[browserify] & [pug] - straight up.
 
 ## Another, really?
 
-Yeah, I know, there are a _ton_ of browserify + Jade packages out there...but! Most of them include Jade's runtime in the compiled results, which is great if you want to use Jade's runtime.
-
-Me? I just wanted to use Jade's slick syntax along with another templating language (like [mustache](http://mustache.github.io/)) and precompile the Jade templates with browserify. So...bam! Plain Jade. (Get it? Plain Jade...Plain **Jane**...ugh, it's really late at night right now.)
+This began as a fork of the excellent browserify transform
+[browserify-plain-jade], which I fequently enjoyed using. The main goal
+was to change the name to reflect that pug is now the official name.
+In the process, I also decided to shorten the name and to change the
+[package.json](package.json) dependency to always use the laest version of
+pug.
 
 ## How to install
 
 ```bash
-npm install browserify-plain-jade
+npm install pugify-html
 ```
 
 ## How to use
 
-Make some Jade:
+Make some pug:
 
-```jade
+```pug
 h1 I am a very special penguin!
 ```
 
 Require it:
 
 ```js
-var template = require('./penguin-jade.jade');
+var template = require('./penguin-pug.pug');
 
 $('.container').append(template);
 ```
@@ -33,10 +40,10 @@ $('.container').append(template);
 browserify it with the JavaScript API:
 
 ```js
-var bpj = require('browserify-plain-jade');
+var pug = require('pugify-html');
 
 var b = browserify();
-b.transform(bpj);
+b.transform(pug);
 b.add('main.js');
 b.bundle(...);
 ```
@@ -44,7 +51,7 @@ b.bundle(...);
 ...or the CLI:
 
 ```bash
-browserify -t browserify-plain-jade foo.jade > bundle.html
+browserify -t pugify-html foo.pug > bundle.html
 ```
 
 ## Contribute
@@ -58,12 +65,5 @@ browserify -t browserify-plain-jade foo.jade > bundle.html
 
 ## License
 
-(The MIT License)
-
-Copyright (c) 2014 Ian Lollar
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+This repository is liscensed under the MIT liscence to allow anyone to use or
+modify it. See [LISCENSE](LISCENSE)
