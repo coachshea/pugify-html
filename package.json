@@ -1,7 +1,7 @@
 {
   "name": "pugify-html",
   "description": "browserify transform to compile pug templates to HTML strings, leaving the parser behind.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "John Shea",
     "email": "coachshea@fastmail.com"
